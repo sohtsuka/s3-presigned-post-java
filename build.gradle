@@ -19,8 +19,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation(platform("software.amazon.awssdk:bom:2.21.15"))
+  implementation("software.amazon.awssdk:s3")
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
